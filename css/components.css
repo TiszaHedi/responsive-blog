@@ -1,0 +1,275 @@
+/**
+ * OVERVIEW
+ *
+ * This file describes the components that build up the site.
+ * From the inner layout to the font color, etc.
+ *
+ */
+
+
+ /**
+ * TABLE OF CONTENTS
+ *
+ * 1. BUTTONS
+ *
+ * 2. HEADER
+ *
+ * 3. NAVIGATION
+ *
+ * 4. POSTS
+ *
+ * 5. POST__CARDS
+ *
+ * 6. SIDEBAR
+ *
+ * 7. PAGINATION
+ *
+ * 8. FOOTER
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
+
+.button {
+  display:       inline-block;
+  padding:       .5rem 2rem;
+  border:        2px solid;
+  border-radius: 5px;
+  text-align:    center;
+}
+
+  .button--primary {
+    background:       var(--primary-color);
+    color:            var(--secondary-font-color);
+    border-color:     #ffffff;
+    transition:       all .2s ease;
+  }
+
+  .button--primary:hover {
+    text-decoration: none;
+    background:      rgba(56,90,124,.8);
+    color:           white;
+  }
+
+
+  .button--secondary-hollow {
+    border-color:     #ffffff;
+    color:            var(--secondary-font-color);;
+    background-color: transparent;
+    outline:          none;
+    transition:       all .3s ease;
+  }
+
+  .button--secondary-hollow:hover {
+    background-color: #ffffff;
+    color:            var(--primary-color);
+    text-decoration:  none;
+    font-weight:      bold;
+  }
+
+
+
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+header {
+  height:           5rem;
+  background-color: var(--primary-color);
+  color:            var(--secondary-font-color);
+  display:          flex;
+  justify-content:  center;
+  align-items:      center;
+}
+
+  .logo {
+    display:     inline-block;
+    color:       var(--secondary-font-color);
+    font-family: 'Playfair Display', serif;
+    font-style:  italic;
+    font-size:   30px;
+  }
+
+  .logo:hover {
+    color:           var(--tertiary-color);
+    text-decoration: none;
+  }
+
+
+
+
+
+/*------------------------------------*\
+  #NAVIGATION
+\*------------------------------------*/
+
+.navbar {
+  background-color: white;
+}
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    text-transform: uppercase;
+    padding:        1rem 1.5rem;
+    font-weight:    bold;
+    letter-spacing: 1px;
+    color:          var(--primary-color);
+    transition:     all .2s ease;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: var(--secondary-color);
+  }
+
+
+
+
+
+/*------------------------------------*\
+  #POSTS
+\*------------------------------------*/
+
+.post {
+  border-radius:    15px 50px;
+  padding:          3rem;
+  background-color: #ffffff;
+}
+
+  .post--featured {
+    background:      url('../assets/featured-post.jpg');
+    background-size: cover;
+    color:           var(--secondary-font-color);;
+  }
+
+  .post--imaged {
+    border-radius: 0 0 15px 50px;
+  }
+
+  .post__img{
+    display:       block;
+    border-radius: 15px 50px 0 0;
+  }
+
+  .post--entry-time {
+    color: var(--tertiary-color);
+  }
+
+
+
+
+
+/*------------------------------------*\
+  #POST__CARDS
+\*------------------------------------*/
+
+.post__card {
+  border-radius:    15px;
+  background-color: white;
+  padding:          2rem;
+  font-size:        .75rem;
+  max-width:        98%;
+}
+
+.post__card img {
+  display: block;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SIDEBAR
+\*------------------------------------*/
+
+.sidebar__container {
+  background-color: white;
+  border-radius:    15px;
+  padding:          0;
+}
+
+  .sidebar__container--colored {
+    background-color: var(--primary-color);
+    color:            var(--secondary-font-color);;
+  }
+
+  .sidebar__container-header {
+    background-color: var(--primary-color);
+    text-align:       center;
+    color:            var(--secondary-font-color);
+    border-radius:    15px 15px 0 0;
+    padding:          1rem 0;
+  }
+
+  .sidebar__container-content {
+    padding: 2rem;
+  }
+
+    .newsletter-form__input-field {
+      display:       block;
+      width:         100%;
+      outline:       none;
+      margin-bottom: 1rem;
+      padding:       .5rem;
+    }
+
+
+    .sidebar__container--recommander {
+      font-size: 0.75rem;
+    }
+
+
+@media (min-width: 768px) {
+
+  .sidebar {
+    padding-left: 45px;
+  }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+  #PAGINATION
+\*------------------------------------*/
+
+.pagination { justify-content: center; }
+
+  .page-link { color: #000000; }
+
+
+
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+footer {
+  background: var(--primary-color);
+  color:      var(--secondary-font-color);
+  padding:    1rem;
+}
+
+  footer a {
+    display:         inline-block;
+    padding:         .5rem;
+    color:           var(--secondary-font-color);
+    text-decoration: none;
+    transition:      all .2s ease-in;
+  }
+
+  footer a:hover { color: var(--tertiary-color); }

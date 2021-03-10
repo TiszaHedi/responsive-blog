@@ -1,0 +1,110 @@
+/**
+ * OVERVIEW
+ *
+ * The project is divided into separate style sheets:
+ *
+ * bootstrap.css............CSS rules that control the layout of the website.
+ * base.css..............Global rules and helpers.
+ * components.css........The CSS of components that build up the site.
+ */
+
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * SETTINGS
+ * Variables............Globally-available variables.
+ * Margins..............Global values of top and bottom margins.
+ *
+ * TYPOGRAPHY
+ * Headings, links and buttons............Typography styles.
+ *
+ * GUTTERS
+ * 
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #SETTINGS
+\*------------------------------------*/
+
+:root {
+  --primary-color:        #385a7c;
+  --secondary-color:      #f97171;
+  --tertiary-color:       #f99192;
+  --secondary-font-color: #ffffff;
+}
+
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+h1, h2 {margin: 1rem 0;}
+
+
+@media (min-width: 768px) {
+
+  .wrapper { width: 100%; }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+  #TIPOGRAPHY
+\*------------------------------------*/
+
+body { 
+  font-family:      'Montserrat', sans-serif; 
+  font-size:        13px;
+  background-color: #f6eeee;
+}
+
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+
+h1 { font-size:     1.75rem; }
+
+h2, h3 { font-size: 1.5rem; }
+
+
+h6 {
+  font-size:      .687rem;
+  text-transform: uppercase;
+  font-weight:    bold;
+  letter-spacing: 1px;
+}
+
+
+@media (min-width: 768px) {
+
+  h1 { font-size:  2.5rem; }
+
+  h2 { font-size:  1.875rem; }
+
+  h3 { font-size:  1.687rem; }
+
+  h6 { font-size:   .75rem; }
+
+  body { font-size: .875rem; }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #GUTTERS
+\*------------------------------------*/
+
+.gutter--horizontal-small { margin-bottom: 2rem; }
+
+.gutter--horizontal-big   { margin-bottom: 3rem; }
